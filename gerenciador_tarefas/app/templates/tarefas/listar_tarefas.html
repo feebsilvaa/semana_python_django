@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Listagem de Tarefas</title>
+    <link rel="stylesheet" href="{% static 'app/css/bootstrap.min.css' %}">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Gerenciador de Tarefas - TreinaWeb</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'listar_tarefas' %}">Listar Tarefas</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="container">
+        <h1>Listagem de tarefas</h1>
+
+        <ul>
+            <li>
+                {{ nome_tarefa }}
+            </li>
+            <li></li>
+        </ul>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed sagittis quam. Fusce placerat purus nunc, sed auctor urna dapibus nec. Curabitur venenatis bibendum augue, tincidunt pharetra tortor gravida quis. Nunc in sodales purus. Mauris cursus facilisis elit et consectetur. Curabitur et rutrum velit. Donec pulvinar, lectus ac vestibulum feugiat, nisi nunc mollis ligula, non ultrices sem justo non urna.
+
+Nulla vitae enim non lectus posuere scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi aliquam magna consectetur ante lacinia vulputate. Cras cursus turpis id convallis aliquet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc cursus varius ultrices. Vivamus bibendum est non est pretium, vitae gravida nibh fermentum. Quisque vel nibh urna. Suspendisse sed rhoncus purus. Suspendisse malesuada nisl ante, ut ullamcorper ligula iaculis ac. Nam luctus justo lectus, euismod condimentum risus varius ac. Donec vitae sapien in quam elementum semper ut dapibus elit.
+
+Aliquam accumsan felis fermentum neque semper lacinia. Aenean elit quam, tristique in congue vel, vestibulum eget massa. Suspendisse luctus ante congue, feugiat lorem a, commodo nisi. In accumsan turpis eget cursus tincidunt. Proin sit amet ultrices ligula. Ut sapien metus, iaculis in justo ut, faucibus porttitor quam. Praesent non mi eros. Curabitur ultrices ante sit amet erat molestie, ut consectetur lectus molestie.
+
+Vestibulum non nunc vel odio ullamcorper tristique. Aliquam consectetur facilisis ex, ut pulvinar elit tristique ut. Nam elit magna, pulvinar eget nisi et, ullamcorper mollis ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam enim lacus, mollis non porta eget, convallis ultricies lorem. Mauris pellentesque luctus aliquam. Suspendisse imperdiet velit eu arcu congue posuere. Maecenas vestibulum feugiat venenatis. Aenean ultrices mi vitae nunc varius, ut tincidunt massa vestibulum. Cras neque purus, fringilla at posuere at, lobortis ac mauris. Proin facilisis finibus elit ac lobortis. Maecenas justo lectus, semper et mattis nec, dignissim sed ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras tincidunt mattis auctor. Quisque commodo, sapien ut sollicitudin iaculis, tortor tellus gravida magna, eget porta libero arcu sit amet mi.
+
+Nam ullamcorper lorem ex, eget pretium erat vestibulum sed. Vestibulum a ipsum in justo sollicitudin finibus. Vivamus mi elit, interdum a quam sed, viverra rutrum nunc. Donec in diam eget dolor finibus rutrum sit amet sit amet arcu. Vivamus vitae lobortis nibh. Vivamus vitae molestie leo, et auctor massa. In pharetra maximus tortor nec facilisis. Donec bibendum arcu ac enim lobortis ornare. Duis augue dui, tincidunt dignissim tincidunt quis, lobortis nec tellus. Quisque et mauris velit. Nulla ac diam sodales, luctus ante a, scelerisque diam. Etiam vel ullamcorper justo, non aliquet nulla. Curabitur eu dapibus dolor, congue tempor nulla.
+        </p>
+    </main>
+
+
+</body>
+</html>
